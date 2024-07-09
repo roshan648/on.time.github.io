@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>on.time</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h2>on.time</h2>
+            <button><img src="h.png"  class="im1"></button>
+            <button><img src="v.png" class="im2"></button>
+        </div>
+        <nav>
+            <ul>
+                <li class="schedule">Schedule</li>
+                <li class="note">Note</li>
+            </ul>
+        </nav>
+        <form action="#todo-date" class="form">
+            <button type="button" id="search-button"><img src="search-icon-lg.png" alt="Search Icon"></button>
+            <input type="search" placeholder="Search Note" id="search-input">
+        </form>
+        <div class="todos"> 
+            <ul class="todo-list">
+                <li>
+                    <span class="todo-date">28/10/2012</span>
+                    <span class="todo-text">Electricity Bill</span>
+                    <input type="checkbox" class="todo-checkbox">
+                </li>
+                <li>
+                    <span class="todo-date">16/08/2013</span>
+                    <span class="todo-text">Travel to Chennai</span>
+                    <input type="checkbox" class="todo-checkbox">
+                </li>
+                <li>
+                    <span class="todo-date">15/08/2017</span>
+                    <span class="todo-text">Message from ***: Don't forget to complete assignments on Tuesday</span>
+                    <input type="checkbox" class="todo-checkbox">
+                </li>
+            </ul>
+        </div>
+        <div class="calendar" style="display: none;">
+            <div class="card">
+                <div class="calendar-toolbar">
+                    <button class="prev month-btn">
+                        <i class="fas fa-chevron-left" style="font-size: 20px;"><b><</b></i>
+                    </button>
+                    <div class="current-month"></div>
+                    <button class="next month-btn">
+                        <i class="fas fa-chevron-right" style="font-size: 20px;"><b>></b></i>
+                    </button>
+                </div>
+                <div class="calendar">
+                    <div class="weekdays">
+                        <div class="weekday-name">Su</div>
+                        <div class="weekday-name">Mo</div>
+                        <div class="weekday-name">Tu</div>
+                        <div class="weekday-name">We</div>
+                        <div class="weekday-name">Th</div>
+                        <div class="weekday-name">Fr</div>
+                        <div class="weekday-name">Sa</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+                <div class="goto-buttons">
+                    <button type="button" class="btn prev-year">Prev Year</button>
+                    <button type="button" class="btn today">Today</button>
+                    <button type="button" class="btn next-year">Next Year</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="todo-section">
+            <input type="text" class="todo-input" placeholder="Add a Todo">
+            <button class="plus-button">+</button>
+        </div>    
+    </div>   
+    <script src="script.js"></script>
+</body>
+</html>
+
